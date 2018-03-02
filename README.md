@@ -14,6 +14,11 @@ And a private key file at the root named:
 
 Generated tokens have a six month duration before expiring.
 
+### Starting the server
+`npm run dev`  
+The server will be a port 4000 unless otherwise specified with PORT env
+
 __TODO:__
  - It probably needs an npm build script and a node version for "engine" in package.json
+ - An application key to authorize requests
  - Unit tests
