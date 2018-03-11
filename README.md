@@ -19,6 +19,10 @@ Generated tokens have a six month duration before expiring.
 The server will be a port 4000 unless otherwise specified with PORT env
 
 __TODO:__
- - It probably needs an npm build script and a node version for "engine" in package.json
  - An application key to authorize requests
  - Unit tests
+
+__NOTE:__
+The private key is pulled in as an environment variable, which works while it runs
+on Heroku, but it doesn't work locally. Switch to loading the key by file reading
+to run locally.

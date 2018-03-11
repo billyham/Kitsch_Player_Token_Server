@@ -4,7 +4,7 @@ const token = require('../lib/token');
 
 router.get('/token', (req, res) => {
   return token.sign()
-  .then(token => res.json(token))
+  .then(token => res.send(token))
   .catch( err => {
     res.status(500).json({ reason: 'Token Signing failure'});
   });
